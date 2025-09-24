@@ -2,9 +2,9 @@ const Features = () => {
   return (
     <section
       id="Benefits"
-      className="flex items-center justify-center w-[1015px] mx-auto gap-[100px] mt-[100px] max-[639px]:flex-col max-[639px]:justify-start max-[639px]:w-full max-[639px]:mt-[80px] mb-[100px] max-[639px]:mb-[80px]"
+      className="flex items-center justify-center w-[1015px] mx-auto gap-[100px] mt-[100px] max-[639px]:flex-col max-[639px]:justify-start max-[639px]:w-full max-[639px]:mt-[20px] mb-[100px] max-[639px]:mb-[80px]"
     >
-      <h2 className="font-bold text-[32px] leading-[48px] text-nowrap">
+      <h2 className="font-bold text-[32px] leading-[48px] text-nowrap max-[639px]:text-2xl">
         We Might Good <br />
         For Your Business
       </h2>

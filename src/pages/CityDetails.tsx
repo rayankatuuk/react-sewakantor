@@ -81,7 +81,7 @@ export default function CityDetails() {
         id="Fresh-Space"
         className="flex flex-col gap-[30px] w-full max-w-[1130px] mx-auto mt-[70px] mb-[120px]"
       >
-        <h2 className="font-bold text-[32px] leading-[48px] max-[639px]:text-[24px] max-[639px]:leading-[36px] text-center max-[639px]:mb-20">
+        <h2 className="font-bold text-[32px] leading-[48px] max-[639px]:text-[24px] max-[639px]:leading-[36px] text-center max-[639px]:mb-20 max-[639px]:mt-[20px]">
           Browse Offices
         </h2>
         <div className="grid grid-cols-3 gap-[30px] max-[639px]:grid-cols-1 max-[639px]:px-4">

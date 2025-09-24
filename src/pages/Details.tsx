@@ -57,7 +57,7 @@ export default function Details() {
               slidesOffsetBefore={10}
             >
               <SwiperSlide className="!w-fit">
-                <div className="w-[700px] h-[550px] overflow-hidden">
+                <div className="w-[700px] h-[550px] overflow-hidden max-[639px]:w-[300px] max-[639px]:h-[300px]">
                   <img
                     src={`${baseUrl}/${office.thumbnail}`}
                     className="w-full h-full object-cover"
@@ -67,7 +67,7 @@ export default function Details() {
               </SwiperSlide>
               {office.photos.map((photo) => (
                 <SwiperSlide key={photo.id} className="!w-fit">
-                  <div className="w-[700px] h-[550px] overflow-hidden">
+                  <div className="w-[700px] h-[550px] overflow-hidden max-[639px]:w-[300px] max-[639px]:h-[300px]">
                     <img
                       src={`${baseUrl}/${photo.photo}`}
                       className="w-full h-full object-cover"
@@ -80,9 +80,10 @@ export default function Details() {
           </div>
         </div>
       </section>
+
       <section
         id="Details"
-        className="relative flex max-w-[1130px] mx-auto gap-[30px] mb-20 z-10"
+        className="relative flex max-w-[1130px] mx-auto gap-[30px] mb-20 z-10 max-[639px]:flex-col max-[639px]:px-4"
       >
         <div className="flex flex-col w-full rounded-[20px] border border-[#E0DEF7] p-[30px] gap-[30px] bg-white">
           <p className="w-fit rounded-full p-[6px_16px] bg-[#0D903A] font-bold text-sm leading-[21px] text-[#F7F7FD]">
@@ -90,57 +91,63 @@ export default function Details() {
           </p>
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="font-extrabold text-[32px] leading-[44px]">
+              <h1 className="font-extrabold text-[32px] leading-[44px] max-[639px]:text-[18px] max-[639px]:leading-[34px]">
                 {office.name}
               </h1>
               <div className="flex items-center gap-[6px] mt-[10px]">
                 <img
                   src="/assets/images/icons/location.svg"
-                  className="w-6 h-6"
+                  className="w-6 h-6 max-[639px]:w-5 max-[639px]:h-5"
                   alt="icon"
                 />
-                <p className="font-semibold">{office.city.name}</p>
+                <p className="font-semibold max-[639px]:text-sm">
+                  {office.city.name}
+                </p>
               </div>
             </div>
             <div className="flex flex-col gap-[6px]">
               <div className="flex items-center gap-1">
                 <img
                   src="/assets/images/icons/Star 1.svg"
-                  className="w-5 h-5"
+                  className="w-5 h-5 max-[639px]:w-4 max-[639px]:h-4"
                   alt="star"
                 />
                 <img
                   src="/assets/images/icons/Star 1.svg"
-                  className="w-5 h-5"
+                  className="w-5 h-5 max-[639px]:w-4 max-[639px]:h-4"
                   alt="star"
                 />
                 <img
                   src="/assets/images/icons/Star 1.svg"
-                  className="w-5 h-5"
+                  className="w-5 h-5 max-[639px]:w-4 max-[639px]:h-4"
                   alt="star"
                 />
                 <img
                   src="/assets/images/icons/Star 1.svg"
-                  className="w-5 h-5"
+                  className="w-5 h-5 max-[639px]:w-4 max-[639px]:h-4"
                   alt="star"
                 />
                 <img
                   src="/assets/images/icons/Star 5.svg"
-                  className="w-5 h-5"
+                  className="w-5 h-5 max-[639px]:w-4 max-[639px]:h-4"
                   alt="star"
                 />
               </div>
-              <p className="font-semibold text-right">4.5/5 (19,384)</p>
+              <p className="font-semibold text-right max-[639px]:text-left max-[639px]:text-sm">
+                4.5/5 (19,384)
+              </p>
             </div>
           </div>
-          <p className="leading-[30px]">{office.about}</p>
+          <p className="leading-[30px] max-[639px]:leading-[24px] max-[639px]:text-sm">
+            {office.about}
+          </p>
           <hr className="border-[#F6F5FD]" />
           <h2 className="font-bold">You Get What You Need Most</h2>
-          <div className="grid grid-cols-3 gap-x-5 gap-y-[30px]">
+          <div className="grid grid-cols-3 gap-x-5 gap-y-[30px] max-[639px]:grid-cols-1 max-[639px]:px-2">
             <div className="flex items-center gap-4">
               <img
                 src="/assets/images/icons/security-user.svg"
-                className="w-[34px] h-[34px]"
+                className="w-[34px] h-[34px] "
                 alt="icon"
               />
               <div className="flex flex-col gap-[2px]">
@@ -234,7 +241,7 @@ export default function Details() {
             </a>
           </div>
         </div>
-        <div className="w-[392px] flex flex-col shrink-0 gap-[30px]">
+        <div className="w-[392px] flex flex-col shrink-0 gap-[30px] max-[639px]:w-full">
           <div className="flex flex-col rounded-[20px] border border-[#E0DEF7] p-[30px] gap-[30px] bg-white">
             <div>
               <p className="font-extrabold text-[32px] leading-[48px] text-[#0D903A]">
