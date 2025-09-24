@@ -87,9 +87,9 @@ export default function CheckBooking() {
       <Navbar></Navbar>
       <div
         id="Banner"
-        className="relative w-full h-[240px] flex items-center shrink-0 overflow-hidden -mb-[50px]"
+        className="relative w-full h-[240px] flex items-center shrink-0 overflow-hidden -mb-[50px] max-[639px]"
       >
-        <h1 className="text-center mx-auto font-extrabold text-[40px] leading-[60px] text-white mb-5 z-20">
+        <h1 className="text-center mx-auto font-extrabold text-[40px] leading-[60px] text-white mb-5 z-20 max-[639px]:text-xl">
           View Your Booking Details
         </h1>
         <div className="absolute w-full h-full bg-[linear-gradient(180deg,_rgba(0,0,0,0)_0%,#000000_91.83%)] z-10" />
@@ -101,11 +101,11 @@ export default function CheckBooking() {
       </div>
       <section
         id="Check-Booking"
-        className="relative flex flex-col w-[930px] shrink-0 gap-[30px] mx-auto mb-[100px] z-20"
+        className="relative flex flex-col w-[930px] shrink-0 gap-[30px] mx-auto mb-[100px] z-20 max-[639px]:w-full max-[639px]:px-4 max-[639px]:text-sm max-[639px]:"
       >
         <form
           onSubmit={handleSubmit}
-          className="flex items-end rounded-[20px] border border-[#E0DEF7] p-[30px] gap-[16px] bg-white"
+          className="flex items-end rounded-[20px] border border-[#E0DEF7] p-[30px] gap-[16px] bg-white max-[639px]:flex-col"
         >
           <div className="flex flex-col w-full gap-2">
             <label htmlFor="name" className="font-semibold">

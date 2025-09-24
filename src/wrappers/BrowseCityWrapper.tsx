@@ -38,15 +38,18 @@ export default function BrowseCityWrapper() {
   }
 
   return (
-    <section id="Cities" className="flex flex-col gap-[30px] mt-[100px]">
-      <div className="w-full max-w-[1130px] mx-auto flex items-center justify-between">
-        <h2 className="font-bold text-[32px] leading-[48px] text-nowrap">
+    <section
+      id="Cities"
+      className="flex flex-col gap-[30px] mt-[100px] max-[639px]:mt-[30px] mb-[100px] max-[639px]:mb-[80px]"
+    >
+      <div className="w-full max-w-[1130px] mx-auto flex items-center justify-between max-[639px]:px-8">
+        <h2 className="font-bold text-[32px] leading-[48px] text-nowrap max-[639px]:text-[20px] max-[639px]:leading-[36px]">
           You Can Choose <br />
           Our Favorite Cities
         </h2>
         <a
           href="#"
-          className="rounded-full rounded-full py-3 px-5 bg-white font-bold"
+          className="rounded-full py-3 px-5 bg-white font-bold max-[639px]:text-xs"
         >
           Explore All City
         </a>
